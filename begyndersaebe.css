@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rosybrown 30%, rgb(109, 80, 80) 90%);
+}
+
+/* Kode til topnav (Logo,menubar) */
+.header-container {
+    display: flex;
+    min-height: 45px;
+    width: 90%;
+    margin: 10px auto 0;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px;
+    margin: 5px 10px;
+}
+
+.logo-container a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-container {
+    margin: 0 25px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    font-size: 1rem;
+    height: 29px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-top: 10px;
+    border-left: 1.5px solid #ffffff;
+    display: inline-block;
+    padding: 0 0.5rem;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a {
+    color: rgb(255, 255, 255);
+}
+
+.material-icons {
+    color: white;
+    border-right: 1.5px solid #ffffff;
+}
+
+li a:hover {
+    color: #000000;
+}
+
+li i:hover {
+    color: #000000;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+    display: none;
+    background: rosybrown;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    min-width: 140px;
+    text-align: left;
+    padding-top: 5px;
+    box-shadow: 0px 3px 5px -1px;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* border-left: 1.5px solid #3ca0e7; */
+}
+
+/* Kode til artiklen */
+
+main {
+    background-color: rgb(236, 222, 222);
+    font-size: 18px;
+    border: transparent;
+    border-radius: 10px;
+    border-style: groove;
+    margin: 10px;
+}
+
+.article-top-container {
+    width: 100%;
+}
+
+.headline-container {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.article-textbox-1 {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.article-textbox-1 b {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.tutorial-img-soap {
+    max-width: 35vw;
+    margin-right: 100px; 
+    border-radius: 8px;
+}
+
+.border-container {
+    background-color: rosybrown;
+    width: 60%;
+    margin: 70px auto 0;
+    border: rgb(221, 195, 195);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.section-2 {
+    width: 100%;
+    margin-top: 3%;
+}
+
+.article-textbox-2-list-1 {
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.article-textbox-2-list-1-headline {
+    list-style-type: none;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.article-textbox-2-list-1 li {
+    padding: 4px;
+}
+
+.article-textbox-2-list-2 {
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.article-textbox-2-list-2-headline {
+    list-style-type: none;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.article-textbox-2-list-2 li {
+    padding: 4px;
+}
+
+.line-container {
+    width: 90%;
+}
+
+.section-3 {
+    margin: 40px auto 0;
+}
+
+.tutorial-step {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+
+.tutorial-step-headline {
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.tutorial-step li {
+    padding: 3px;
+}
+
+.tutorial-img-tools {
+    max-width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tutorial-img-step-1 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tutorial-img-step-2 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-3 img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 30%;
+    border-radius: 8px;
+    
+}
+
+.tutorial-img-step-4 img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 30%;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-5 img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 30%;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-6 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tutorial-img-step-6 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-7 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tutorial-img-step-7 img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tutorial-img-step-8 img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 70%;
+    border-radius: 8px;
+}
+
+.tutorial-step-end {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Footer styling */
+
+footer {
+    height: 130px;
+    width: 70%;
+    margin: 0 auto 0;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    margin: 0;
+    color: white;
+}
+
+.page-footer-section {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.some_image {
+    width: 32px;
+    padding: 8px;
+}
+
+.page-footer-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 0 30px;
+}
+
+.page-footer-section a:first-child {
+    margin-left: 0;
+}
+
+.page-footer-section a:last-child {
+    margin-right: 0;
+}
